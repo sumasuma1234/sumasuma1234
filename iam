@@ -1,4 +1,4 @@
 resource "aws_iam_user" "lb" {
-  name = "syamala"
+  name = "test"
   path = "/system/"
 }
