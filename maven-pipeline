@@ -1,0 +1,18 @@
+node{
+
+   stage("git clone"){
+   
+       git url: 'https://github.com/sumasuma1234/sumasuma1234.git',branch: 'main'
+     
+   }
+    
+    stage("Maven Clean Package"){
+    
+        def mavenhome= tool name: "maven",type: "maven"
+        
+          sh "s(mavenhome)/bin/mvn clean package"
+          
+   }
+   
+}      
+   
